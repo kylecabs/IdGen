@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Generate ID</title>
+    <link rel="stylesheet" href="student.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fill out the Form</h1>
+
+      <!-- Form to collect information -->
+      <form id="idCardForm">
+        <label for="picture">Picture:</label>
+        <input
+          type="file"
+          id="picture"
+          name="picture"
+          accept="image/*"
+        /><br /><br />
+
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input
+          type="tel"
+          id="phoneNumber"
+          name="phoneNumber"
+          required
+        /><br /><br />
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea><br /><br />
+
+        <input type="button" value="Submit" onclick="submitForm()" />
+      </form>
+
+      <!-- Modal for displaying submitted information -->
+      <div id="infoDisplay" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2>Information Submitted:</h2>
+          <img
+            id="displayImage"
+            src=""
+            alt="ID Picture"
+            style="width: 120px; height: 120px"
+          /><br /><br />
+          <p><strong>Full Name:</strong> <span id="displayFullName"></span></p>
+          <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+          <p>
+            <strong>Phone Number:</strong> <span id="displayPhoneNumber"></span>
+          </p>
+          <p><strong>Address:</strong> <span id="displayAddress"></span></p>
+          <button id="printButton" onclick="printInfo()">Print</button>
+        </div>
+      </div>
+    </div>
+    <script src="student.js"></script>
+  </body>
+</html>

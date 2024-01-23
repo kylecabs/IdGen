@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Error 404.</title>
+    
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://kit.fontawesome.com/9f3bc5b183.js" crossorigin="anonymous"></script>
+
+     <style type="text/css">
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/*Scrollbar color*/
+::-webkit-scrollbar-thumb {
+    background: #1A920B;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1A920B;
+}
+/* navbar styling */
+nav{
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+}
+nav.sticky{
+  /*Header Color*/
+  background: #1A920B;
+  padding: 13px 0;
+}
+nav .navbar{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+nav .lobo {
+            width: 100px;
+            height: auto;
+            position: fixed;
+            top: 10px; 
+            left: 30px; 
+            cursor: pointer; 
+            margin: 10;
+            border-radius: 70%;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+nav .navbar .logo a{
+  font-weight: 500;
+  font-size: 35px;
+  color: #1A920B;
+}
+nav.sticky .navbar .logo a{
+  color: #fff;
+}
+nav .navbar .menu{
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li{
+  list-style: none;
+  margin: 0 8px;
+}
+.navbar .menu a{
+  font-size: 30px;
+  font-weight: 500;
+  /* text color */
+  color: #1A920B;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+.navbar .menu a:hover{
+  color: #1A920B;
+}
+nav.sticky .menu a{
+  color: #FFF;
+}
+nav.sticky .menu a:hover{
+  color: #0E2431;
+}
+.media-icons a{
+  color: #1A920B;
+  font-size: 30px;
+  margin: 0 6px;
+}
+.media-icons a{
+  color: blue;
+}
+.media-icons p{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: calc(50% - 50px);
+  color: #1A920B;
+  font-size: 60px;
+  margin: 0 6px;
+  text-align: center;
+}
+.media-icons p{
+  color: white;
+}
+
+/* Side Navigation Menu Button CSS */
+
+
+/* home section styling */
+
+
+.meyn {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url("images/404.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.container {
+  text-align: center;
+  position: absolute;
+  top: 40%; /* Adjust the top position to move it down */
+  left: 50%; /* Center the container horizontally */
+  transform: translate(-48%, -70%); /* Center the container both horizontally and vertically */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px; /* Set a maximum width if necessary */
+  height: 50vh;
+  padding: 30px;
+  border: 1px solid #D22809;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+ h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+
+
+/* Contact Me CSS */
+button {
+            background-color: #4caf50;
+            color: white;
+            padding: 15px 50px;
+            border: none;
+            margin: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+button:hover {
+            background-color: #0b7dda;
+        }
+
+/* Footer CSS */
+footer{
+  background: #1A920B;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+footer .text span{
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+footer .text span a{
+  font-weight: 500;
+  color: #FFF;
+}
+footer .text span a:hover{
+  text-decoration: underline;
+}
+/* Scroll TO Top Button CSS */
+
+     </style>
+
+   </head>
+
+   <body>
+  <!-- Move to up button -->
+  
+  <!-- navigation menu -->
+  <nav>
+
+    <div class="navbar">
+      <div class="logo-container">
+        <a href="https://web.facebook.com/dcdnhsdavaocity">
+            <img src="images/logo.png" alt="School Logo" class="lobo">
+        </a>
+    </div>
+      <div class="menu"><a href="#">DCDNHS</a></div>
+  </nav>
+
+  
+<!-- Home Section Start -->
+
+
+<div class="container">
+    <h1>Error 404</h1>
+    <p>The page you are looking for does not exist or has been moved.</p>
+    <button onclick="location.href='index.html'">Go Home</button>
+</div>
+ <section class="meyn" id="meyn">
+   
+ </section>
+
+<!-- Contact Me section Start -->
+
+
+      
+</section>
+
+
+<footer>
+  <div class="text">
+        <span>
+            Created By:
+            <a href="https://www.facebook.com/profile.php?id=100083187422039&_rdc=1&_rdr" onclick="openPopups()">Grade 12 ICT Students, Section Sunstone of Doña Carmen Denia National High School</a>
+        </span>
+    </div>
+</footer>
+
+<script>
+   // Sticky Navigation Menu JS Code
+let nav = document.querySelector("nav");
+let scrollBtn = document.querySelector(".scroll-button a");
+console.log(scrollBtn);
+let val;
+window.onscroll = function() {
+ if(document.documentElement.scrollTop > 20){
+    nav.classList.add("sticky");
+    scrollBtn.style.display = "block";
+ }else{
+    nav.classList.remove("sticky");
+    scrollBtn.style.display = "none";
+ }
+
+}
+
+// Side NavIgation Menu JS Code
+let body = document.querySelector("body");
+let navBar = document.querySelector(".navbar");
+let menuBtn = document.querySelector(".menu-btn");
+let cancelBtn = document.querySelector(".cancel-btn");
+menuBtn.onclick = function(){
+ navBar.classList.add("active");
+ menuBtn.style.opacity = "0";
+ menuBtn.style.pointerEvents = "none";
+ body.style.overflow = "hidden";
+ scrollBtn.style.pointerEvents = "none";
+}
+cancelBtn.onclick = function(){
+ navBar.classList.remove("active");
+ menuBtn.style.opacity = "1";
+ menuBtn.style.pointerEvents = "auto";
+ body.style.overflow = "auto";
+ scrollBtn.style.pointerEvents = "auto";
+}
+// Side Navigation Bar Close While We Click On Navigation Links
+
+function openPopups() {
+        window.open('https://www.facebook.com/kyle.cabrera.3323', 'popup1', 'width=500,height=1000');
+    }
+
+</script>
+</body>
+</html>
